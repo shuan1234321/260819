@@ -73,5 +73,4 @@ elif operator == "/":
         result = number1 / number2
 else:
     result = "잘못된 연산자입니다"
-
 print(result)
