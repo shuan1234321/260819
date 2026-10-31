@@ -36,9 +36,9 @@ var2 = 2
 
 if var1 > var2:
     print("var1이 더 큽니다.")
-if var1 == var2:
+elif var1 == var2:
     print("var1과 var2가 같습니다.")
-if var1 < var2:
+elif var1 < var2:
     print("var2가 더 큽니다")
 
 
@@ -51,3 +51,27 @@ user_input = input("원하는 동작을 입력하세요")
 
 if user_input == "1":
     print("게임을 시작합니다.")
+elif user_input == "2":
+    print("랭킹을 확인합니다")
+elif user_input == "0":
+    print("게임을 종료합니다")
+
+number1 = float(input("첫번째 숫자를 입력하세요: "))
+number2 = float(input("두번째 숫자를 입력하세요: "))
+operator = input("연산자를 입력하세요: ")
+
+if operator == "+":
+    result = number1 + number2
+elif operator == "-":
+    result = number1 - number2
+elif operator == "*":
+    result = number1 * number2
+elif operator == "/":
+    if number2 == 0:
+        result = "0으로 나눌 수 없습니다"
+    else:
+        result = number1 / number2
+else:
+    result = "잘못된 연산자입니다"
+
+print(result)
